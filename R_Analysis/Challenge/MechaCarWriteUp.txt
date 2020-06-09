@@ -1,0 +1,83 @@
+
+--- MPG Regression ---
+
+Multiple linear regression results for the linear model that predicts the mpg of MechaCar prototypes using a number of variables within the MechaCar mpg dataset.
+
+The multiple linear regression tests the following hypotheses:
+
+H0 : The slope of the multiple linear model is zero, or m = 0
+
+Ha : The slope of the mutiple linear model is not zero, or m ≠ 0
+
+Assumed significance level for this mutiple linear model: 0.05
+
+The multiple linear regression model is the following:
+
+mpg = 6.240e+00(vehicle.length) +  1.276e-03(vehicle.weight) + 8.031e-02(spoiler.angle) +
+3.659e+00(ground.clearance) -1.076e+02
+
+The vehicle length and ground clearance( as well as the intercept) are statistically unlikely to provide random amounts of variance to the linear model.In other words the vehicle length and ground clearance have a significant impact on the mpg of MechaCar prototypes.
+
+Since the intercept is statistically significant, it means there are other variables and factors that contribute to the variation in mpg of MechaCar prototypes that have not been included in the model. These variables may or may not be within the provided dataset and may still need to be collected or observed.
+
+The p-value is for this model is 2.277e-11 which is less than 0.05 so the p-value is significant. We do have enough evidence to reject the null hypothesis and that the null hypothesis is not true therefore we reject the null hypothesis and say that the slope of the multiple linear model is not zero.
+
+--- Suspension Coil Summary ---
+
+The mean of suspension coil’s pounds-per-inch is 1499 and the median is 1500.The variance of
+suspension coil’s pounds-per-inch is 62.3 and the standard deviation is 7.9. The minimum and maximum value in the suspension coil dataset is 1452 and 152 respectively.The first and the third quartile of suspension coil dataset are 1498 and 1501 respectively.
+
+The current manufacturing data does meet this design specification since the variance of
+suspension coil’s pounds-per-inch is 62.3 and it is less than 100 pounds per inch and the variance does not exceed 100 pounds. 
+
+--- Suspension Coil T-Test ---
+
+The PSI from suspension coil data is considered to be normally distributed since the qulitative test for normality showed that the density plot of PSI follows normal distribution.
+
+Using one sample t-test to test the following hypotheses:
+
+H0 : There is no statistical difference between the observed sample mean and its presumed population mean for each manufacturing lot.
+
+Ha : There is a statistical difference between the observed sample mean and its presumed population mean for each manufacturing lot.
+
+For manufacturing lot number one the p-value is 1 which is above than the significance level(0.05). Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
+
+For manufacturing lot number two the p-value is 0.6072 which is above than the significance level(0.05). Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
+
+For manufacturing lot number three the p-value is 0.04168 which is less than the significance level. Therefore, we do have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically different for manufacturing lot number three.
+
+--- Design Your Own Study --- 
+
+To compare the performance of the MechaCar prototype vehicle to other comparable vehicles on the market we should see what metricswould be of interest to a consumer. A consumer looks for a reasonable price, low fuel efficiency, an attractive color, smooth drive, high engine power (horse power), automatic trasmission, good safety features, apple and android carplay, key less entry, push start button, sun roof and etc.So the metrics for the study would be the following:
+
+Price
+Fuel efficiency
+Color
+Drive type
+Engine power (Horse power)
+Automatic trasmission
+Safety features
+Carplay
+Key less entry
+Push start button
+sun roof
+
+The question for the study would be that is there statistical differece between the means of the above variables in all the samples or not. 
+
+The categorical variables can be tested using chi-squared test.The chi-squared test is used to compare the distribution of frequencies across two groups and tests the following hypotheses:
+
+H0 : There is no difference in frequency distribution between both groups.
+
+Ha : There is a difference in frequency distribution between both groups.
+
+The numerical variables can be tested using ANOVA.When dealing with large real-world numerical data, the question of interest is comparing the means across more than two samples or groups.Using the analysis of variance (ANOVA) test is one better way to do this, which is used to compare the means of a continuous numerical variable across a number of groups.For our study a two-way ANOVA would be best since it is used to test the means for two different independent variables.
+ 
+The statistical hypotheses of an ANOVA test are:
+
+H0 : The means of all groups are equal, or µ1 = µ2 = … = µn.
+
+Ha : At least one of the means is different from all other groups.
+
+We should collect data for the other comparable vehicles on the market that can be compared to the performance of the MechaCar prototype vehicle. The datasets should have common metrics (listed above) to compare and to carry the statistical tests on. 
+
+ 
